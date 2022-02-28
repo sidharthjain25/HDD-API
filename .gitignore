@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/HDD/HDD.API/bin/Debug/net6.0
+/HDD/.vs/HDD/config/applicationhost.config
+/HDD/.vs/HDD/DesignTimeBuild/.dtbcache.v2
+/HDD/HDD.API/obj/Debug/net6.0/ref
+/HDD/HDD.API/obj/Debug/net6.0/refint
+/HDD/HDD.API/obj/Debug/net6.0/apphost.exe
+*.cache
+/HDD/HDD.API/obj/Debug/net6.0
+/HDD/HDD.API/obj

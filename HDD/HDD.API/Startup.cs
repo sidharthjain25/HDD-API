@@ -1,4 +1,7 @@
-﻿namespace HDD.API
+﻿using HDD.Data;
+using Microsoft.EntityFrameworkCore;
+
+namespace HDD.API
 {
     public static class Startup
     {
@@ -13,6 +16,7 @@
 
         private static void ConfigureServices(WebApplicationBuilder builder)
         {
+            builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("HDDDatabase")));
             builder.Services.AddControllers();            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
